@@ -51,20 +51,22 @@ body {
 
     <script>
         function checkPassword() {
-            var password = prompt("Enter the secret password 💙");
-            if (password !== "1421") {
-                alert("Wrong password 😔");
-                document.body.innerHTML = "";
-            }
-        }
+    var password = prompt("Enter the secret password 💙");
+    if (password !== "1421") {
+        alert("Wrong password 😔");
+        document.body.innerHTML = "";
+    } else {
+        const iframe = document.getElementById("music");
+        iframe.src += "&autoplay=1";
+    }
+}
     </script>
 </head>
 <body onload="checkPassword()">
-
-    <iframe width="0" height="0"
-        src="https://www.youtube.com/embed/MujKHOlcfyU?autoplay=1&loop=1&playlist=MujKHOlcfyU"
-        frameborder="0" allow="autoplay; encrypted-media">
-    </iframe>
+    <iframe id="music" width="0" height="0"
+    src="https://www.youtube.com/embed/MujKHOlcfyU?loop=1&playlist=MujKHOlcfyU"
+    frameborder="0" allow="autoplay; encrypted-media">
+</iframe>
     <div class="content">
         <h1>Advance Happy Shivratri ❤️</h1>
         <p>
