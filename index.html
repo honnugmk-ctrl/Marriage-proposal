@@ -2,36 +2,34 @@
 <html>
 <head>
     <title>For You 💙💗</title>
-
     <style>
-        body {
-            background-image: url('bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-        }
-
+        html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: url("./bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
         .content {
-            background: rgba(255, 255, 255, 0.75);
-            padding: 30px;
-            border-radius: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+}
         h1 {
             color: #1f3c88;
         }
-
         p {
             font-size: 20px;
             color: #2c2c2c;
             line-height: 1.6;
         }
-
         .heart {
             position: fixed;
             bottom: -10px;
@@ -39,7 +37,6 @@
             animation: floatUp 6s linear infinite;
             opacity: 0.7;
         }
-
         @keyframes floatUp {
             0% {
                 transform: translateY(0);
@@ -62,17 +59,14 @@
         }
     </script>
 </head>
-
 <body onload="checkPassword()">
 
     <iframe width="0" height="0"
         src="https://www.youtube.com/embed/MujKHOlcfyU?autoplay=1&loop=1&playlist=MujKHOlcfyU"
         frameborder="0" allow="autoplay; encrypted-media">
     </iframe>
-
     <div class="content">
         <h1>Advance Happy Shivratri ❤️</h1>
-
         <p>
             Hii cutiepiee 🥰<br><br>
 
@@ -93,7 +87,6 @@
             Enk patambhuchi vennum mama 😭😘
         </p>
     </div>
-
     <script>
         setInterval(() => {
             const heart = document.createElement("div");
