@@ -21,8 +21,18 @@
         }
     </style>
 </head>
+    <script>
+function checkPassword() {
+    var password = prompt("Enter the secret password 💙");
+    if (password !== "1421") {
+        alert("Wrong password 😔");
+        document.body.innerHTML = "";
+    }
+}
+</script>
 <body>
-
+<body onload="checkPassword()">
+    
     <h1>Happy Shivratri 💙💗</h1>
 
     <p>
