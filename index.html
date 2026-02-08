@@ -2,13 +2,34 @@
 <html>
 <head>
     <title>For You 💙💗</title>
+    .heart {
+    position: fixed;
+    bottom: -10px;
+    font-size: 20px;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
     <style>
-        body {
-            background: linear-gradient(to bottom right, #a1c4fd, #fbc2eb);
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-        }
+       body {
+    background-image: url('WhatsApp Image 2026-02-08 at 11.39.53 PM.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
         h1 {
             color: #1f3c88;
         }
@@ -20,6 +41,13 @@
             line-height: 1.6;
         }
     </style>
+    .content {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+}
 </head> 
     <script>
 function checkPassword() {
@@ -30,14 +58,28 @@ function checkPassword() {
     }
 }
 </script>
-<body>
+    <script>
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = Math.random() > 0.5 ? "💗" : "💙";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}, 500);
+</script>
+</body>
 <body onload="checkPassword()">
    <iframe width="0" height="0"
     src="https://www.youtube.com/embed/MujKHOlcfyU?autoplay=1&loop=1&playlist=MujKHOlcfyU"
     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
- 
-    <h1>Happy Shivratri 💙💗</h1>
+ <div class="content">
+    <h1> Advance Happy Shivratri❤️ </h1>
 
     <p>
         Hii cutiepiee 🥰<br><br>
@@ -57,8 +99,5 @@ function checkPassword() {
         I always want us to be together, happy and in love forever. 💙💗<br><br>
 
         Enk patambhuchi vennum mama 😭😘
-    </p>
-<br><br>
-<img src="us.jpg" alt="Us" style="width:300px; border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.3);">
-</body>
+    </div>
 </html>
