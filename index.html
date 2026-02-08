@@ -2,102 +2,112 @@
 <html>
 <head>
     <title>For You 💙💗</title>
-    .heart {
-    position: fixed;
-    bottom: -10px;
-    font-size: 20px;
-    animation: floatUp 6s linear infinite;
-    opacity: 0.7;
-}
 
-@keyframes floatUp {
-    0% {
-        transform: translateY(0);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(-100vh);
-        opacity: 0;
-    }
-}
     <style>
-       body {
-    background-image: url('WhatsApp Image 2026-02-08 at 11.39.53 PM.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 40px;
-}
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
         h1 {
             color: #1f3c88;
         }
+
         p {
             font-size: 20px;
             color: #2c2c2c;
-            max-width: 700px;
-            margin: auto;
             line-height: 1.6;
         }
+
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            font-size: 20px;
+            animation: floatUp 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
     </style>
-    .content {
-    background: rgba(255, 255, 255, 0.75);
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-</head> 
-    <script>
-function checkPassword() {
-    var password = prompt("Enter the secret password 💙");
-    if (password !== "1421") {
-        alert("Wrong password 😔");
-        document.body.innerHTML = "";
-    }
-}
-</script>
-    <script>
-setInterval(() => {
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerHTML = Math.random() > 0.5 ? "💗" : "💙";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-    document.body.appendChild(heart);
 
-    setTimeout(() => {
-        heart.remove();
-    }, 6000);
-}, 500);
-</script>
-</body>
+    <script>
+        function checkPassword() {
+            var password = prompt("Enter the secret password 💙");
+            if (password !== "1421") {
+                alert("Wrong password 😔");
+                document.body.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
 <body onload="checkPassword()">
-   <iframe width="0" height="0"
-    src="https://www.youtube.com/embed/MujKHOlcfyU?autoplay=1&loop=1&playlist=MujKHOlcfyU"
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
- <div class="content">
-    <h1> Advance Happy Shivratri❤️ </h1>
 
-    <p>
-        Hii cutiepiee 🥰<br><br>
+    <iframe width="0" height="0"
+        src="https://www.youtube.com/embed/MujKHOlcfyU?autoplay=1&loop=1&playlist=MujKHOlcfyU"
+        frameborder="0" allow="autoplay; encrypted-media">
+    </iframe>
 
-        I’m so happy that you are in my life.  
-        You always make me smile, and I love you so much. ❤️<br><br>
+    <div class="content">
+        <h1>Advance Happy Shivratri ❤️</h1>
 
-        So, on this Shivratri — the day Shiva and Parvati ma got married —  
-        I want to ask you something special… 💍<br><br>
+        <p>
+            Hii cutiepiee 🥰<br><br>
 
-        Will you marry me? 💕<br><br>
+            I’m so happy that you are in my life.  
+            You always make me smile, and I love you so much. ❤️<br><br>
 
-        Because I always say you are my Shiva and I am your Parvati.  
-        If you are my Krishna, then I am your Radhe, Rukmini, and Tulsi.  
-        If you are Vishnu, then I am your Lakshmi. ✨<br><br>
+            So, on this Shivratri — the day Shiva and Parvati ma got married —  
+            I want to ask you something special… 💍<br><br>
 
-        I always want us to be together, happy and in love forever. 💙💗<br><br>
+            Will you marry me? 💕<br><br>
 
-        Enk patambhuchi vennum mama 😭😘
+            Because I always say you are my Shiva and I am your Parvati.  
+            If you are my Krishna, then I am your Radhe, Rukmini, and Tulsi.  
+            If you are Vishnu, then I am your Lakshmi. ✨<br><br>
+
+            I always want us to be together, happy and in love forever. 💙💗<br><br>
+
+            Enk patambhuchi vennum mama 😭😘
+        </p>
     </div>
+
+    <script>
+        setInterval(() => {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = Math.random() > 0.5 ? "💗" : "💙";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }, 500);
+    </script>
+
+</body>
 </html>
